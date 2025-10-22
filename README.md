@@ -31,7 +31,7 @@ Desenvolver uma API RESTful com operações CRUD completas para uma entidade de 
 **Clone o repositório:**
 
    ```bash
-   git clone [https://github.com/seu-usuario/bookapi.git](https://github.com/CoimbraDouglas/appWebBookapi.git)
+   git clone https://github.com/CoimbraDouglas/appWebBookapi.git
    cd bookapi
    ```
 Execute o projeto (no terminal da IDE):
@@ -161,12 +161,13 @@ Write-Host "✅ Livro com ID $id removido com sucesso."
 ⚙️ 6️⃣ Verificar detalhes de resposta HTTP
 Se quiser visualizar o status code e cabeçalhos da resposta, use:
 
-powershell
-Copiar código
+```powershell
+
 $response = Invoke-WebRequest -Uri "http://localhost:8080/api/books" -Method GET
 $response.StatusCode
 $response.Headers
 $response.Content
+```
 
 🧰 Dica Extra — Script Completo de Testes Automáticos
 Você pode criar um arquivo chamado test-api.ps1 e colar todos os testes acima em sequência.
@@ -179,6 +180,15 @@ Depois, basta executar no PowerShell:
 ```
 
 Isso permitirá testar todos os endpoints da API de forma automatizada, validando se as operações CRUD estão funcionando corretamente.
+
+---
+📸 Telas do sistema em execução:
+
+Plano de teste do JMeter (.jmx)
+![Descrição da Imagem](src/main/resources/images/Cap002.png)
+
+H2-Console e localhost da ApiBooks
+![Descrição da Imagem](src/main/resources/images/Cap003.png)
 
 ---
 
