@@ -196,7 +196,8 @@ H2-Console e localhost da ApiBooks
 
 Este projeto demonstra uma arquitetura REST básica com Spring Boot, aplicando boas práticas de desenvolvimento, separação de camadas (Controller, Service, Repository) e persistência de dados com JPA/H2.
 
-💡 Dica: o uso do Invoke-RestMethod é altamente recomendado em ambientes Windows, pois oferece respostas já convertidas em objetos nativos do PowerShell, facilitando a leitura, automação e validação dos endpoints.
+💡 **Dica:** o uso do Invoke-RestMethod é altamente recomendado em ambientes Windows, pois oferece respostas já convertidas em objetos nativos do PowerShell, facilitando a leitura, automação e validação dos endpoints.
+
 --- 
 
 ✍️ Autor
