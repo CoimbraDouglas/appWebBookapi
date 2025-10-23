@@ -82,6 +82,12 @@ A seguir estão todos os testes CRUD em sequência, prontos para execução.
 jmeter/bookapi-test.jmx
 ```
 
+**Plano de teste unitário (.exe):** O arquivo se encontra em:
+
+```
+target/jacoco.exe
+```
+
 ---
 
 🟢 1️⃣ Criar um livro (POST)
