@@ -40,7 +40,7 @@ Execute o projeto (no terminal da IDE):
 ./mvnw spring-boot:run
 ```
 
-O servidor será iniciado em:
+O servidor será iniciado por padrão em: 
 
 ```
 http://localhost:8080/api/books
