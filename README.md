@@ -198,7 +198,7 @@ H2-Console e localhost da ApiBooks
 
 ---
 
-📘 Conclusão
+## 📘 Conclusão ##
 
 Este projeto demonstra uma arquitetura REST básica com Spring Boot, aplicando boas práticas de desenvolvimento, separação de camadas (Controller, Service, Repository) e persistência de dados com JPA/H2.
 
