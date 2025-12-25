@@ -176,6 +176,7 @@ $response.Content
 ```
 
 🧰 Dica Extra — Script Completo de Testes Automáticos
+
 Você pode criar um arquivo chamado test-api.ps1 e colar todos os testes acima em sequência.
 
 Depois, basta executar no PowerShell:
@@ -188,6 +189,7 @@ Depois, basta executar no PowerShell:
 Isso permitirá testar todos os endpoints da API de forma automatizada, validando se as operações CRUD estão funcionando corretamente.
 
 ---
+
 📸 Telas do sistema em execução:
 
 Plano de teste do JMeter (.jmx)
@@ -200,7 +202,7 @@ H2-Console e localhost da ApiBooks
 
 ## 📘 Conclusão ##
 
-Este projeto demonstra uma arquitetura REST básica com Spring Boot, aplicando boas práticas de desenvolvimento, separação de camadas (Controller, Service, Repository) e persistência de dados com JPA/H2.
+Este projeto demonstra uma arquitetura REST básica com `Spring Boot`, aplicando boas práticas de desenvolvimento, separação de camadas (Controller, Service, Repository) e persistência de dados com JPA/H2.
 
 💡 **Dica:** o uso do Invoke-RestMethod é altamente recomendado em ambientes Windows, pois oferece respostas já convertidas em objetos nativos do PowerShell, facilitando a leitura, automação e validação dos endpoints.
 
