@@ -8,7 +8,7 @@ Também permite aplicar testes automatizados com Jacoco/Mockito (unitários) e J
 
 ## 📘Objetivo
 
-Desenvolver uma API RESTful com operações CRUD completas para uma entidade de sua escolha, utilizando Java com Spring Boot, e aplicar testes automatizados com Mockito (unitários) e JMeter (desempenho). 
+Desenvolver uma `API RESTful` com operações CRUD completas para uma entidade de sua escolha, utilizando Java com Spring Boot, e aplicar testes automatizados com Mockito (unitários) e JMeter (desempenho). 
 
 📚 **Disciplina:** Arquitetura de Aplicacoes Web 👨‍🏫 **Professor:** Leonardo Vieira Guimarãe 🏫 **Instituição:** Centro Universitário Newton Paiva ✍️ **Aluno:** Douglas Coimbra Laass.
 
