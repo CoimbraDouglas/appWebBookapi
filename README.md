@@ -2,7 +2,7 @@
 
 API RESTfull desenvolvida em **Spring Boot** para o gerenciamento de livros.  
 Permite criar, listar, buscar, atualizar e excluir livros no banco de dados. 
-Também permite aplicar testes automatizados com Jacoco/Mockito (unitários) e JMeter (desempenho). 
+Também permite aplicar testes automatizados com **Jacoco/Mockito** (unitários) e **JMeter** (desempenho). 
 
 ---
 
@@ -59,7 +59,8 @@ Password: (em branco, ou você pode alterar em src/main/resources/application.pr
 
 ---
 
-🧱 Estrutura da API
+## 🧱 Estrutura da API
+
 ```
 Método	Endpoint	Descrição
 POST	/api/books	Cria um novo livro
@@ -71,7 +72,7 @@ DELETE	/api/books/{id}	Exclui um livro
 
 ---
 
-🧪 Testes da API (PowerShell)
+## 🧪 Testes da API (PowerShell)
 
 Recomenda-se o uso do PowerShell com o comando **Invoke-RestMethod** para validar os endpoints da aplicação quando for utilizar o curl.
 A seguir estão todos os testes CRUD em sequência, prontos para execução.
@@ -90,7 +91,7 @@ target/jacoco.exe
 
 ---
 
-🟢 1️⃣ Criar um livro (POST)
+### 🟢 1️⃣ Criar um livro (POST)
 ```powershell
 
 $body = @{
@@ -120,7 +121,7 @@ Resposta esperada:
   "price": 39.9
 }
 ```
-📚 2️⃣ Listar todos os livros (GET)
+### 📚 2️⃣ Listar todos os livros (GET)
 
 ```powershell
 
@@ -128,7 +129,7 @@ $response = Invoke-RestMethod -Uri "http://localhost:8080/api/books" -Method GET
 $response | ConvertTo-Json -Depth 5
 ```
 
-🔍 3️⃣ Buscar um livro por ID (GET /{id})
+### 🔍 3️⃣ Buscar um livro por ID (GET /{id})
 
 ```powershell
 
@@ -137,7 +138,7 @@ $response = Invoke-RestMethod -Uri "http://localhost:8080/api/books/$id" -Method
 $response | ConvertTo-Json -Depth 5
 ```
 
-✏️ 4️⃣ Atualizar um livro existente (PUT)
+### ✏️ 4️⃣ Atualizar um livro existente (PUT)
 ```powershell
 
 $id = 1
@@ -156,7 +157,7 @@ $response = Invoke-RestMethod -Uri "http://localhost:8080/api/books/$id" `
 $response | ConvertTo-Json -Depth 5
 ```
 
-🗑️ 5️⃣ Excluir um livro (DELETE)
+### 🗑️ 5️⃣ Excluir um livro (DELETE)
 ```powershell
 
 $id = 1
@@ -164,7 +165,7 @@ Invoke-RestMethod -Uri "http://localhost:8080/api/books/$id" -Method DELETE
 Write-Host "✅ Livro com ID $id removido com sucesso."
 ```
 
-⚙️ 6️⃣ Verificar detalhes de resposta HTTP
+### ⚙️ 6️⃣ Verificar detalhes de resposta HTTP
 Se quiser visualizar o status code e cabeçalhos da resposta, use:
 
 ```powershell
@@ -175,7 +176,7 @@ $response.Headers
 $response.Content
 ```
 
-🧰 Dica Extra — Script Completo de Testes Automáticos
+## 🧰 Dica Extra — Script Completo de Testes Automáticos
 
 Você pode criar um arquivo chamado test-api.ps1 e colar todos os testes acima em sequência.
 
@@ -190,7 +191,7 @@ Isso permitirá testar todos os endpoints da API de forma automatizada, validand
 
 ---
 
-📸 Telas do sistema em execução:
+## 📸 Telas do sistema em execução:
 
 Plano de teste do JMeter (.jmx)
 ![Descrição da Imagem](src/main/resources/images/Cap002.png)
@@ -200,7 +201,7 @@ H2-Console e localhost da ApiBooks
 
 ---
 
-## 📘 Conclusão ##
+## 📘 Conclusão 
 
 Este projeto demonstra uma arquitetura REST básica com `Spring Boot`, aplicando boas práticas de desenvolvimento, separação de camadas (Controller, Service, Repository) e persistência de dados com JPA/H2.
 
@@ -208,7 +209,7 @@ Este projeto demonstra uma arquitetura REST básica com `Spring Boot`, aplicando
 
 --- 
 
-✍️ Autor
+## ✍️ Autor
 
 Douglas Coimbra
 Desenvolvido para fins acadêmicos — disciplina Arquitetura de Aplicações Web.
