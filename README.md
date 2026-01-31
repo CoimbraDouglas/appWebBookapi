@@ -209,7 +209,7 @@ Este projeto demonstra uma arquitetura REST básica com `Spring Boot`, aplicando
 
 --- 
 
-## ✍️ Autor
+### ✍️ Autor
 
 Douglas Coimbra
 Desenvolvido para fins acadêmicos — disciplina Arquitetura de Aplicações Web.
